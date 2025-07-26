@@ -1,0 +1,25 @@
+/* Type Selector */
+h1 {
+    color: blue;
+}
+
+/* Class Selector */
+.center-text {
+    text-align: center;
+}
+
+/* ID Selector  */
+#unique-id {
+    color: darkred;
+}
+
+/* Grouping => apply code on some tags */
+h1, p, div {
+    font-family: sans-serif;
+}
+
+/* Universal Selector  apply code on all tags */
+* {
+    margin: 7;
+    padding: 0;
+}

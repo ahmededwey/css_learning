@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Float and Clear Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .box {
+      width: 150px;
+      height: 100px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      line-height: 100px;
+      margin: 10px;
+    }
+
+    .float-left {
+      float: left;
+      background-color: #2196F3;
+    }
+
+    .float-right {
+      float: right;
+      background-color: #4CAF50;
+    }
+
+    .content {
+      background-color: #f2f2f2;
+      padding: 10px;
+      margin-top: 130px;
+    }
+
+    .clear-both {
+      clear: both;
+    }
+
+    .cleared-box {
+      background-color: #FF5722;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Float and Clear in CSS</h2>
+
+  <!-- Floated elements -->
+  <div class="box float-left">Float Left</div>
+  <div class="box float-right">Float Right</div>
+
+  <!-- Content wrapping around floated elements -->
+  <div class="content">
+    <p>This content wraps between the two floated boxes. Notice how the float-left and float-right boxes are aligned at the top.</p>
+  </div>
+
+  <!-- Clearing both sides -->
+  <div class="clear-both"></div>
+
+  <!-- Box that appears below the floated elements -->
+  <div class="box cleared-box">
+    Cleared Box (Below)
+  </div>
+
+</body>
+</html>

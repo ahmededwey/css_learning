@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Positioning Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      position: relative;
+      height: 400px;
+      border: 2px dashed #888;
+      margin-bottom: 60px;
+      background-color: #fff;
+      padding: 10px;
+    }
+
+    .box {
+      width: 150px;
+      height: 80px;
+      padding: 10px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .static-box { 
+        /* ده الديفولت والمربع الازرق واخد مكانه عادي */
+      background-color: #2196F3;
+      position: static;
+    }
+
+    .relative-box {
+        /* ده المربع الاخضر اللي بيتحرك من مكانه بمقدار البكسيلز اللي انت بتحددها */
+      background-color: #4CAF50;
+      position: relative;
+      top: 20px;
+      left: 30px;
+    }
+
+    .absolute-box {
+        /* ده المربع البرتقالي اللي بيتحرك من مكانه بمقدار البكسيلز اللي انت بتحددها بس بالنسبة للكونتينر اللي هو فيه */
+      background-color: #FF9800;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .fixed-box {
+        /* ده المربع اللي بيبقى ثابت في مكانه في الفيو بورت حتى لو انت سكروللت */
+      background-color: #E91E63;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Positioning Example</h2>
+
+  <!-- Fixed Box (Stays in viewport) -->
+  <div class="box fixed-box">
+    position: fixed
+  </div>
+
+  <!-- Container with relative positioning -->
+  <div class="container">
+    <div class="box static-box">
+      position: static
+    </div>
+
+    <div class="box relative-box">
+      position: relative
+    </div>
+
+    <div class="box absolute-box">
+      position: absolute
+    </div>
+  </div>
+
+  <p>Scroll down to see how the <strong>fixed box</strong> stays in place.</p>
+
+  <div style="height: 800px;"></div>
+
+</body>
+</html>

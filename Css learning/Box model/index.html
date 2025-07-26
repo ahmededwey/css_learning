@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Box Model Example</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      padding: 25px;
+      border: 5px solid blue;
+      margin: 35px;
+      background-color: lightyellow;
+
+      /* Optional for consistent sizing */
+      box-sizing: content-box; /* or use border-box */
+    }
+
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Box Model Demo</h2>
+
+  <div class="box">
+    Hello, I'm a box!<br>
+    I have margin, border, and padding.
+  </div>
+
+</body>
+</html>
